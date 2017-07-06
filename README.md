@@ -1,1 +1,1 @@
-# student_management-JSTL
+# student-management-jstl
