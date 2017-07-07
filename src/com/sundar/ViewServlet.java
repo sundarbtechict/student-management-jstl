@@ -10,15 +10,15 @@ import javax.servlet.http.HttpServletResponse;
 
 
 /**
- * Servlet implementation class Read1
+ * Servlet implementation class ViewServlet
  */
-public class Read1 extends HttpServlet {
+public class ViewServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Read1() {
+    public ViewServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -40,7 +40,7 @@ public class Read1 extends HttpServlet {
 		}
 		}catch (Exception e){System.out.println(e);}
 		ServletContext context= getServletContext();
-		RequestDispatcher rd= context.getRequestDispatcher("/././Read.jsp");
+		RequestDispatcher rd= context.getRequestDispatcher("/viewStudent.jsp");
 		System.out.println(" hi");
 		rd.forward(request, response);
 		

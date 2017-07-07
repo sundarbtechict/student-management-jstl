@@ -10,15 +10,15 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class Edit
+ * Servlet implementation class EditServlet
  */
-public class Edit extends HttpServlet {
+public class EditServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Edit() {
+    public EditServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -39,7 +39,7 @@ public class Edit extends HttpServlet {
 			}
 			}catch (Exception e){System.out.println(e);}
 			ServletContext context= getServletContext();
-			RequestDispatcher rd= context.getRequestDispatcher("/././Edit.jsp");
+			RequestDispatcher rd= context.getRequestDispatcher("/updateStudent.jsp");
 			rd.forward(request, response);
 
 	}

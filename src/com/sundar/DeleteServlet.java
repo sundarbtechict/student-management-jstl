@@ -7,15 +7,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class Insert1
+ * Servlet implementation class DeleteServlet
  */
-public class Insert1 extends HttpServlet {
+public class DeleteServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-
+       
     /**
-     * Default constructor. 
+     * @see HttpServlet#HttpServlet()
      */
-    public Insert1() {
+    public DeleteServlet() {
+        super();
         // TODO Auto-generated constructor stub
     }
 
@@ -24,27 +25,22 @@ public class Insert1 extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		System.out.println("HELLO: ");
+		String regno = request.getParameter("regno");
+		System.out.println(regno);
+		try{
+			StudentDB s=new StudentDB();
+			s.delete(regno);
+		}catch (Exception e){System.out.println(e);}
+		response.sendRedirect("./././index");
+
 	}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
-	{
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		Student st=new Student();
-		st.setName(request.getParameter("name"));
-		st.setRegNo(request.getParameter("regno"));
-		st.setDob(request.getParameter("dob"));
-		st.setEmail(request.getParameter("email"));
-		st.setMobile(request.getParameter("mobile"));
-		st.setDept(request.getParameter("dept"));
-		try{
-			StudentDB s=new StudentDB();
-			s.insert(st);
-		}catch (Exception e){System.out.println(e);}
-		response.sendRedirect("./././index");
+		doGet(request, response);
 	}
-}
 
+}

@@ -45,7 +45,7 @@
 			</c:forEach>
 			
 		</table>
-		<a href="./insert.html">create</a>
+		<a href="./createStudent.jsp">create</a>
 	</div>
 
 </body>

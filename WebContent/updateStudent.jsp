@@ -54,7 +54,7 @@
 			</tr>
 		</table>
 	</form>
-	<a href="./Index.jsp">back</a>
+	<a href="./index.jsp">back</a>
 
 </body>
 </html>

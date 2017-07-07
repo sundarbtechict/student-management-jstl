@@ -1,6 +1,11 @@
 package com.sundar;
 
-public class Student {
+
+public class Student 
+	{
+	/**
+	 * 
+	 */
 	private String regNo;
 	private String name;
 	private String dob;

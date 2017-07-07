@@ -2,7 +2,7 @@
 <web-app id="WebApp_ID" version="2.4"
 	xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
-	<display-name>student_management-JSTL</display-name>
+	<display-name>Student Management</display-name>
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>
 		<welcome-file>index.htm</welcome-file>
@@ -13,62 +13,62 @@
 	</welcome-file-list>
 	<servlet>
 		<description></description>
-		<display-name>Index</display-name>
-		<servlet-name>Index</servlet-name>
-		<servlet-class>com.sundar.Index</servlet-class>
+		<display-name>IndexServlet</display-name>
+		<servlet-name>IndexServlet</servlet-name>
+		<servlet-class>com.sundar.IndexServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>Index</servlet-name>
+		<servlet-name>IndexServlet</servlet-name>
 		<url-pattern>/index</url-pattern>
 	</servlet-mapping>
 	<servlet>
 		<description></description>
-		<display-name>Read1</display-name>
-		<servlet-name>Read1</servlet-name>
-		<servlet-class>com.sundar.Read1</servlet-class>
+		<display-name>ViewServlet</display-name>
+		<servlet-name>ViewServlet</servlet-name>
+		<servlet-class>com.sundar.ViewServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>Read1</servlet-name>
+		<servlet-name>ViewServlet</servlet-name>
 		<url-pattern>/read</url-pattern>
 	</servlet-mapping>
 	<servlet>
 		<description></description>
-		<display-name>Edit</display-name>
-		<servlet-name>Edit</servlet-name>
-		<servlet-class>com.sundar.Edit</servlet-class>
+		<display-name>EditServlet</display-name>
+		<servlet-name>EditServlet</servlet-name>
+		<servlet-class>com.sundar.EditServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>Edit</servlet-name>
+		<servlet-name>EditServlet</servlet-name>
 		<url-pattern>/edit</url-pattern>
 	</servlet-mapping>
 	<servlet>
 		<description></description>
-		<display-name>Edit1</display-name>
-		<servlet-name>Edit1</servlet-name>
-		<servlet-class>com.sundar.Edit1</servlet-class>
+		<display-name>UpdateServlet</display-name>
+		<servlet-name>UpdateServlet</servlet-name>
+		<servlet-class>com.sundar.UpdateServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>Edit1</servlet-name>
+		<servlet-name>UpdateServlet</servlet-name>
 		<url-pattern>/edit1</url-pattern>
 	</servlet-mapping>
 	<servlet>
 		<description></description>
-		<display-name>Insert1</display-name>
-		<servlet-name>Insert1</servlet-name>
-		<servlet-class>com.sundar.Insert1</servlet-class>
+		<display-name>CreateServlet</display-name>
+		<servlet-name>CreateServlet</servlet-name>
+		<servlet-class>com.sundar.CreateServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>Insert1</servlet-name>
+		<servlet-name>CreateServlet</servlet-name>
 		<url-pattern>/insert</url-pattern>
 	</servlet-mapping>
 	<servlet>
 		<description></description>
-		<display-name>Delete</display-name>
-		<servlet-name>Delete</servlet-name>
-		<servlet-class>com.sundar.Delete</servlet-class>
+		<display-name>DeleteServlet</display-name>
+		<servlet-name>DeleteServlet</servlet-name>
+		<servlet-class>com.sundar.DeleteServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>Delete</servlet-name>
+		<servlet-name>DeleteServlet</servlet-name>
 		<url-pattern>/delete</url-pattern>
 	</servlet-mapping>
 </web-app>

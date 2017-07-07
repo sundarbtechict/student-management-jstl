@@ -43,7 +43,7 @@
 					<td><c:out value="${std.getMobile()}"/></td>
 				</tr>
 			</table>
-		<a href='./././Index.jsp'> Back</a>
+		<a href='./././index.jsp'> Back</a>
 	</div>
 </body>
 </html>
